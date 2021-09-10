@@ -1,0 +1,63 @@
+{
+  "name": "token",
+  "main": "dist/index.js",
+  "types": "dist/index.ts",
+  "private": true,
+  "files": [
+    "artifacts",
+    "dist"
+  ],
+  "scripts": {
+    "compile": "./scripts/compile.sh",
+    "prepare": "yarn compile",
+    "test": "hardhat test",
+    "deploy": "hardhat run scripts/deploy.ts"
+  },
+  "dependencies": {
+    "@ethersproject/abi": "^5.4.1",
+    "@ethersproject/address": "^5.4.0",
+    "@ethersproject/bytes": "^5.4.0",
+    "@ethersproject/contracts": "^5.4.1",
+    "@ethersproject/logger": "^5.4.1",
+    "@ethersproject/networks": "^5.4.2",
+    "@ethersproject/providers": "^5.4.5",
+    "@ethersproject/solidity": "^5.4.0",
+    "@openzeppelin/contracts": "4.3.1",
+    "@uniswap/v2-periphery": "^1.1.0-beta.0",
+    "@uniswap/v3-periphery": "^1.1.1"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "2.0.2",
+    "@nomiclabs/hardhat-solhint": "2.0.0",
+    "@nomiclabs/hardhat-waffle": "2.0.1",
+    "@typechain/ethers-v5": "7.0.1",
+    "@typechain/hardhat": "2.3.0",
+    "@types/chai": "4.2.21",
+    "@types/inquirer": "^7.3.3",
+    "@types/lodash": "^4.14.172",
+    "@types/luxon": "2.0.2",
+    "@types/mocha": "9.0.0",
+    "@types/node": "16.7.6",
+    "@types/prettier": "^2.3.2",
+    "@uniswap/sdk": "3.0.3",
+    "@uniswap/v3-sdk": "^3.3.2",
+    "chai": "4.3.4",
+    "ethereum-waffle": "3.4.0",
+    "ethers": "5.4.6",
+    "hardhat": "2.6.1",
+    "hardhat-gas-reporter": "1.0.4",
+    "inquirer": "^8.1.2",
+    "lodash": "^4.17.21",
+    "luxon": "2.0.2",
+    "mocha": "^8.4.0",
+    "prettier": "^2.3.2",
+    "prettier-plugin-solidity": "^1.0.0-beta.17",
+    "solc": "0.8.6",
+    "solhint": "3.3.6",
+    "solhint-plugin-prettier": "0.0.5",
+    "ts-mocha": "8.0.0",
+    "ts-node": "^10.2.1",
+    "typechain": "5.1.2",
+    "typescript": "^4.4.2"
+  }
+}

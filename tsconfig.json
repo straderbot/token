@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    
+    "target": "es2017",
+
+
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "sourceMap": true,
+    "strict": true,
+
+    "lib": ["esnext"],
+    "skipLibCheck": true,
+    "resolveJsonModule": true
+  },
+  "exclude": [
+    "**/tests/**/*",
+    "**/dist/**/*",
+    "**/node_modules/**/*",
+    "**/scripts/**/*"
+  ]
+  ,
+  "include": ["./hardhat.config.ts", "./types/**/*.ts", "./types/**/*.d.ts"]
+}

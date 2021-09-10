@@ -1,0 +1,27 @@
+node_modules
+
+
+#Hardhat files
+cache
+artifacts
+
+# Testing
+coverage
+
+# Build
+types
+dist
+build
+
+# Extras
+*.log
+.DS_Store
+.env
+
+# Yarn
+.yarn/cache
+.yarn/install-state.gz
+.yarn/build-state.yml 
+
+# Typescript
+tsconfig.tsbuildinfo
